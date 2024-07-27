@@ -15,6 +15,14 @@ a {
     text-decoration: none;
 
 }
+h1 {
+    color: rgb(255, 123, 0);
+}
+#sticky {
+    position: fixed;
+    width: 1080px;
+    top: 1px;
+}
 .navlinks{
     display: flex;
     align-items: center;
@@ -30,11 +38,14 @@ a {
     background-color: rgb(38, 36, 34);
     height: 10vh;
     box-decoration-break: clone;
+    
 }
 .navdiv {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
 }
 .logo a {
@@ -42,6 +53,7 @@ a {
 font-size: 35px;
 font-weight: 600;
 color: rgb(250, 116, 14);
+
 }
 li {
 list-style: none;
@@ -97,7 +109,7 @@ h1:hover{
    
 }
 h2{
-    text-shadow: 2px 2px rgb(81, 77, 77);
+    text-shadow: 2px 2px rgb(74, 71, 71);
 }
 
 #about {
@@ -115,7 +127,7 @@ h2{
     height: auto;
 }
 .img {
- margin-top: 100px;
+ margin-top: 20px;
     background-size: 100% ;
     border-radius: 10px;
 }
@@ -142,6 +154,8 @@ border-radius: 20px;
 overflow: hidden;
 box-shadow: 0px 2ox 4px rgba (0, 0, 0, 0,2);
 margin: 10px;
+display: grid;
+
 
 
 }
@@ -172,5 +186,10 @@ form {
 }
 #dishes {
     background-color: #313030;
+}
+@media (max-width:768px) {
+    .grid{
+        grid-auto-flow: row;
+    }
 }
 
